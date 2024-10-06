@@ -3,18 +3,78 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<head>
+  <style>
+    /* Custom styles for dropdown */
+
+    .w3-bar {
+        position: relative;
+        overflow: visible;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 10;
+        top: 100%;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display:block;
+        top: 100%;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #555;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display:block;
+    }
+
+    .dropdown:hover .w3-button {
+        background-color: #555;
+    }
+  </style>
+</head>
+
 <body>
 
 <!-- Navigation -->
 <nav class="w3-bar w3-black">
+    <a href="home.html" class="w3-bar-item w3-button">
+      <img src="images/Guardians_of_the_Islamic_Revolution.png" alt="Logo" style="height: 30px; width: auto; vertical-align: middle;">
+    </a>
     <a href="home.html" class="w3-button w3-bar-item">Home</a>
-    <a href="mission.html" class="w3-button w3-bar-item">Mission Statement</a>
-    <a href="hierarchy.html" class="w3-button w3-bar-item">Hierarchy</a>
-    <a href="operatives.html" class="w3-button w3-bar-item">Operatives</a>
-    <a href="mois.html" class="w3-button w3-bar-item">MOIS</a>
-    <a href="iran.html" class="w3-button w3-bar-item">Iran Doctrine</a>
-    <a href="nato.html" class="w3-button w3-bar-item">NATO-EU Doctrine</a>
-    <a href="us.html" class="w3-button w3-bar-item">US Doctrine</a>
+    <div class="dropdown">
+      <button class="w3-button w3-bar-item">Part 1</button>
+      <div class="dropdown-content">
+          <a href="mission.html">Mission Statement</a>
+          <a href="ops_hierarchy.html">Operatives Hierarchy</a>
+          <a href="mois.html">MOIS</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="w3-button w3-bar-item">Part 2</button>
+      <div class="dropdown-content">
+          <a href="iran.html">Iran Doctrine</a>
+          <a href="nato.html">NATO-EU Doctrine</a>
+          <a href="us.html">US Doctrine</a>
+          <a href="pers_hierarchy.html">Personnel Hierarchy</a>
+      </div>
+    </div>
     <a href="resources.html" class="w3-button w3-bar-item">Resources</a>
   </nav>
 
