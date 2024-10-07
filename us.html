@@ -1,68 +1,136 @@
 
 <head>
     <script src="include.js"></script>
+    <style>
+        .container {
+            width: 100%; /* Make the container full width */
+            display: flex; /* Use flexbox to create a two-column layout */
+            flex-wrap: wrap; /* Allow the columns to wrap to the next line */
+        }
+
+        .left-column {
+            width: 50%; /* Make the left column 50% wide */
+            float: left; /* Float the left column to the left */
+            padding: 20px; /* Add some padding to the left column */
+        }
+
+        .right-column {
+            width: 50%; /* Make the right column 50% wide */
+            float: right; /* Float the right column to the right */
+            padding: 20px; /* Add some padding to the right column */
+        }
+    </style>
   </head>
   <body>
     <div data-include="base.html"></div>
 
     <h1><strong>Federal Cyber Laws:</strong></h1>
-    <ul>
-      <li><strong>Computer Fraud and Abuse Act (CFAA):</strong></li>
-      <ul>
-        <li>Enacted in 1986</li>
-        <li>Amends Comprehensive Crime Control Act of 1984</li>
-        <ul>
-          <li>First major cybercrime legislation and was not very effective</li>
-        </ul>
-        <li>Prohibits intentionally accessing a computer without authorization or exceeding authorization </li>
-        <li>Has been amended 9 times between 1988 and 2008 </li>
-        <li>Criminalizes: </li>
-        <ul>
-          <li>Distribution of malicious code </li>
-          <li>Undertaking denial of service attacks </li>
-          <li>Trafficking in passwords or other access control mechanisms </li>
-          <li>Expanding protection to private computers </li>
-          <li>Assing tampering and attempted extortion </li>
-          <li>Including taking information off of systems </li>
-          <li> Including civil actions under the auspices of the act </li>
+    <div class="container">
+        <div class="left-column">
+          <!-- Content for the left column goes here -->
+          <br>
+            <li><strong>Computer Fraud and Abuse Act (CFAA):</strong></li>
+            <ul>
+              <li>Enacted in 1986</li>
+              <li>Amends Comprehensive Crime Control Act of 1984</li>
+              <ul>
+                <li>First major cybercrime legislation and was not very effective</li>
+              </ul>
+              <li>Prohibits intentionally accessing a computer without authorization or exceeding authorization </li>
+              <li>Has been amended 9 times between 1988 and 2008 </li>
+              <li>Amendments Include: </li>
+              <ul>
+                <li>Criminalizing distribution of malicious code </li>
+                <li>Criminalizing denial of service attacks </li>
+                <li>Criminalizing accessing, tampering, and attempted extortion </li>
+                <li>Criminalizing trafficking in passwords or other access control mechanisms </li>
+                <li>Expanding protection to private computers </li>
+                <li>Including punishing taking information off of systems </li>
+                <li>Allowing civil action to be taken </li>
+                <ul>
+                  <li>Now companies can threaten use of this act to prevent others from leaking private information </li>
+                  <li>But can also get judgement easier when evidence isn’t rock solid because proof doesn’t need to be “beyond a reasonable doubt” </li>
+                </ul>
+              </ul>
+            </ul>
+            <br></br>
+            <table border="1">
+                <col style="width: 80%">
+                <col style="width: 20%">
+                <tr>
+                  <th>Offense</th>
+                  <th>Max Sentence</th>
+                </tr>
+                <tr>
+                  <td>Obtaining National Security Information</td>
+                  <td>10 Years</td>
+                </tr>
+                <tr>
+                  <td>Accessing a Computer and Obtaining Information</td>
+                  <td>1 - 5 Years</td>
+                </tr>
+                <tr>
+                  <td>Trespassing in a Government Computer</td>
+                  <td>1 Year</td>
+                </tr>
+                <tr>
+                  <td>Accessing a Computer to Defraud and Obtain Value</td>
+                  <td>5 Years</td>
+                </tr>
+                <tr>
+                  <td>Intentionally Damaging by Knowing Transmission</td>
+                  <td>1 - 10 Years</td>
+                </tr>
+                <tr>
+                  <td>Recklessly Damaging by Intentional Access</td>
+                  <td>1 - 5 Years</td>
+                </tr>
+                <tr>
+                  <td>Negligently Causing Damage and Loss by Intentional Access</td>
+                  <td>1 Year</td>
+                </tr>
+                <tr>
+                  <td>Trafficking in Passwords</td>
+                  <td>1 Year</td>
+                </tr>
+                <tr>
+                  <td>Extortion Involving Computers</td>
+                  <td>5 Years</td>
+                </tr>
+                <tr>
+                  <td>Attempt and Conspiracy to Commit such an Offense</td>
+                  <td>10 Years</td>
+                </tr>
+              </table>
+        </div>
+        <div class="right-column">
+          <!-- Content for the right column goes here -->
           <ul>
-            <li>Companies can threaten to use the act against others </li>
-            <li>But can also get judgement easier when evidence isn’t rock solid because proof doesn’t need to be “beyond a reasonable doubt” but rather “a lot” (preponderance) </li>
+            <li><strong>Cybersecurity Information Sharing Act (CISA):</strong></li>
+            <br>
+            <ul>
+                <li>Passed in 2015</li>
+                <li>Key Terms:</li>
+                <ul>
+                    <li>Cyber Threat Indicators: necessary information to identify threats and information on actual or potential harm as a result of a cyber threat</li>
+                    <li>Defense Measures: something that detects, prevents, or mitigates a known or suspected cyber threat or security vulnerability</li>
+                    <li>Cybersecurity Purpose: purpose of protecting an information system or information from a cyber threat or security vulnerability</li>
+                </ul>
+                <li>Encourages private companies to voluntarily share information by allowing federal antitrust exemptions, immunity from federal/state disclosure laws, and a non-waiver of applicable protections for sharing materials</li>
+                <li>Before, companies didn't share cyber threats for fear of violating regulations so this act offers protections so companies will disclose vulnerabilities to improve overall cybersecurity</li>
+                <li>Cybersecurity and Infrastructure Security Agency (CISA) becomes the central hub for sharing of defensive measures and cyber threat indicators between private and public sectors</li>
+            </ul>
           </ul>
           
         </ul>
-        <li>Offenses:</li>
-        <ul>
-          <li>Obtaining National Security Information (10 yrs) </li>
-            <li>Accessing a Computer and Obtaining Information (1 – 5 yrs) </li>
-            <li>Trespassing in a Government Computer (1 yr)               </li>
-            <li>Accessing a Computer to Defraud and Obtain Value (5 yrs)       </li>        
-            <li>Intentionally Damaging by Knowing Transmission (1 – 10 yrs)         </li>     
-            <li>Recklessly Damaging by Intentional Access (1 – 5 yrs)               </li>
-            <li>Negligently Causing Damage and Loss by Intentional Access (1 yr) </li>
-            <li>Trafficking in Passwords (1 yr) </li>
-            <li>Extortion Involving Computers (5 yrs) </li>
-            <li>Attempt and Conspiracy to Commit such an Offense (10 yrs) </li>
-        </ul>
+        
       </ul>
-      <li><strong>Cybersecurity Information Sharing Act (CISA)</strong></li>
-      <ul>
-        <li>Passed in 2015</li> 
-        <li>CISA becomes central hub for sharing of “defensive measures” and “cyber threat indicators” between private and public sectors </li>
-        <li>Terms: </li>
-        <ul>
-          <li>Cyber threat indicators: necessary info to identify threats and information on actual or potential harm as a result of a cyber threat  </li>
-          <li>Defense measures: something that detects, prevents, or mitigates a known or suspected cyber threat or security vulnerability  </li>
-          <li>Cybersecurity purpose: purpose of protecting an information system or information form a cyber threat/security vulnerability  </li>
-        </ul>
-        <li>Encourages private companies to voluntarily share information by allowing federal antitrust exemptions, immunity from federal/state disclosure laws, and a non-waiver of applicable protections for sharing materials </li>
-        <li>Before, companies didn’t share for fear of violating regulations, this act offers protections so companies will share</li>
-      </ul>
+      
     </ul>
 
-    <h1>ADD REFERENCES</h1>
+    </div>
     <br/>
-
+    <div class="left-column">
     <h1><strong>State-Level Cyber Laws:</strong></h1>
     <ul>
       <li><strong>Security Breach Notification Laws:</strong></li>
@@ -115,14 +183,15 @@
           <li><strong>Offenses:</strong></li>
           <ul>
             <li>Enforcement from the FTC. (Gen Laws § 93H-3) </li>
-            <li>Criminal offence</li>
+            <li>Criminal Offense</li>
             <li>$5000 fine per violation </li>
             <li>Affected individuals may be granted the right to pursue legal action against the breached organization. </li>
           </ul>
         </ul>
       </ul>
     </ul>
-    <h1>ADD CITATIONS</h1>
+
+
 
   </body>
   
