@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="styles.css">
+
+<head>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;"><b>Operation 3</b></h1>
+    <h3><b><u>Description:</u></b></h3>
+    <ul>
+        <li>
+            Iranian government-sponsored APT actors have been exploiting vulnerabilities in Microsoft 
+    Exchange and Fortinet products to gain initial access to systems across multiple U.S. critical 
+    infrastructure sectors, including Transportation, Healthcare and U.S. municipal government. 
+    The actors leverage this access for follow-on operations like data exfiltration, ransomware 
+    deployment, and extortion. This has been occurring since March 2021 until the time of this 
+    report (November 2021).
+        </li>
+        <li>
+            In March of 2021, the FBI and CISA observed Iranian government-sponsored APT actors 
+            scanning devices on ports 4443, 8443, and 10443 for Fortinet FortiOS vulnerability 
+            CVE-2018-13379. 
+        </li>
+        <li>In May 2021, these Iranian government-sponsored APT actors exploited a Fortigate 
+            appliance to access a webserver hosting the domain for a U.S. municipal government. </li>
+        <li>This goal of this campaign was to have initial access to potential exploit a system 
+            further in the future.  </li>
+    </ul>
+
+    <h3><b><u>Offensive Cyber Strategy:</u></b></h3>
+    <ol>
+        <li><b>Vulnerability Exploits:</b></li>
+        <ol type="a">
+            <li>CVEs used:</li>
+            <ol type="i">
+                <li>CVE-2021-34473 (Microsoft Exchange)</li>
+                <li>CVE-2018-13379, CVE-2020-12812, and CVE-2019-5591(Fortninet). </li>
+            </ol>
+        </ol>
+        <li><b>Mimikatz:</b></li>
+        <ol type="a">
+            <li>Used for credential theft.:</li>
+        </ol>
+
+        <li><b>WinPEAS:</b></li>
+        <ol type="a">
+            <li>Used for privilege escalation.</li>
+        </ol>
+
+        <li><b>SharpWMI (Windows Management Instrumentation):</b></li>
+        <ol type="a">
+            <li>Used for lateral movement and remote execution.</li>
+        </ol>
+
+        <li><b>WinRAR:</b></li>
+        <ol type="a">
+            <li>Used to archive collected data.</li>
+        </ol>
+
+        <li><b>FileZilla:</b></li>
+        <ol type="a">
+            <li>Used to transfer files.</li>
+            <li>Potentially used FTP over 443.</li>
+        </ol>
+
+        <li><b>Persistence Techniques:</b></li>
+        <ol type="a">
+            <li>Established new user accounts. Some of these were made to look like other user accounts.  </li>
+   
+        </ol>
+
+        <li><b>Ransomeware:</b></li>
+        <ol type="a">
+            <li>BitLocker was forced to activate on host networks, along with a threatening text file or email to the user.</li>
+            <ol type="i">
+                <li>The following emails were left for contact information:</li>
+                <ol>
+                    <li>sar_addr@protonmail[.]com </li>
+                    <li>WeAreHere@secmail[.]pro </li>
+                    <li>nosterrmann@mail[.]com </li>
+                    <li>nosterrmann@protonmail[.]com</li>
+                </ol>
+            </ol>
+        </ol>
+        <br/>
+    </ol>
+
+    <h4><b>Legal Issues:</b></h4>
+    <ul>
+        <li>
+            These offensive operations and tactics violate international cyber laws. 
+            These tools and techniques were used against critical U.S. infrastructure, 
+            which is criminalized by international and domestic law. Because the threat 
+            actors are outside of the U.S, they are not punishable by U.S. law. Iran is 
+            not a part of NATO, and so Iran cannot be held responsible for broken laws 
+            by NATO either. However, it is important to note that this is a grey area 
+            due to the difficulty in definitively attributing a cyber attack to a group 
+            or country. 
+        </li>
+    </ul>
+
+    <h4><b>Related Tools, Techniques, Technology, and Data:</b></h4>
+    <ol>
+        <li>Task Scheduler modifications for persistence.</li>
+        <li>Creation of new user accounts for maintaining access.</li>
+        <li>Use of legitimate tools for data collection and exfiltration.</li>
+        <li>FTP transfers over port 443 for data exfiltration.</li>
+        <li>Exploiting Fortninet Devices</li>
+    </ol>
+
+    <h3><b><u>Defensive Cyber Strategy:</u></b></h3>
+    <ol>
+        <li>Detection Systems:</li>
+        <ol type="a">
+            <li>Investigate Microsoft Exchange servers for compromise.</li>
+            <li>Search for potential changes in firewall, RDP, and WinRM settings that may allow attackers back in.</li>
+            <li>Review directories for new user accounts.</li>
+            <li>An IDS or IPS can also be implemented</li>
+        </ol>
+        <li>Patch Management:</li>
+        <ol type="a">
+            <li>install new patches and updates.</li>
+            <li>Specifically patch software affected by the CVE mentioned earlier.</li>
+        </ol>
+
+        <li>Network Segmentation:</li>
+        <ol type="a">
+            <li>Segmentate the network to prevent lateral movement.</li>
+        </ol>
+        <li>Multi-Factor Authentication:</li>
+        <ol type="a">
+            <li>Use MFA to help protect accounts with access to critical systems.</li>
+        </ol>
+        <li>Phishing Awareness:</li>
+        <ol type="a">
+            Use meetings or emails to spread awareness for phishing attempts.
+        </ol>
+    </ol>
+
+    <h4><b>Legal Issues:</b></h4>
+    <ul>
+        <li>Defensive measures such as the ones outlined in this plan, do not violate 
+            any legal measures in the cyber world. These measures are to be put in place 
+            to protect against those who do break the law.  </li>
+    </ul>
+
+</body>
+
+</html>
