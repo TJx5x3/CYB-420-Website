@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <h1 style="text-align: center;"><b>Operation 1:</b></h1>
+    <h1>Hackers Breach Israeli Nuclear Facility's Computer Network</h1>
+
+    <h3><b>Description:</b></h3>
+    <ul>
+        <li>An Iran-linked hacking group breached the network of an Israeli nuclear installation 
+            as a protest against the war in Gaza. They claim to have stolen and published thousands 
+            of documents. While many of the documents stolen were not sensitive in nature, the leaked 
+            phone numbers, email addresses, and more could be used maliciously in future attacks. </li>
+        <li>Breached the Dimona nuclear facility. </li>
+        <li>Done by Anonymous hackers. </li>
+        <li>Part of a series of data dumps carried out against Israel by various threat groups.</li>
+    </ul>
+
+    <h3><b><u>Offensive Cyber Strategy:</u></b></h3>
+
+    <p>In this context, the goal of the Iranian hackers was to infiltrate the IT network, exfiltrate 
+        sensitive data, and release it without disrupting the operational technology (OT) network. This
+         type of operation is typically part of an intelligence-gathering and disinformation campaign. 
+         While the disruption of the OT was not the goal, it very easily could have been, and could 
+         have been disastrous if exploited.   </p>
+
+    <h5><b>Spear Phishing Toolkits:</b></h5>
+    <ul>
+        <li><b>Purpose:</b> Used to craft highly targeted phishing emails that exploit specific individuals or 
+            groups within the organization to gain network access. </li>
+        <li><b>Function:</b> By embedding malicious links or attachments, the attackers can execute remote access or 
+            data exfiltration once a user is compromised. </li>
+    </ul>
+
+    <h5><b>Custom Malware (e.g., Data Exfiltration Malware)</b></h5>
+    <ul>
+        <li><b>Purpose: </b>To extract sensitive data from the compromised network without detection. </li>
+        <li><b>Function: </b>The malware is designed to remain stealthy, communicate with command and control (C2) 
+            servers, and exfiltrate sensitive documents over time. </li>
+    </ul>
+
+    <h5><b>Lateral Movement Tools (e.g., Mimikatz) </b></h5>
+    <ul>
+        <li><b>Purpose: </b>To escalate privileges and move laterally within the IT network.  </li>
+        <li><b>Function: </b>After gaining initial access, tools like Mimikatz help attackers gain further control 
+            by stealing credentials, which can be used to access sensitive systems and databases.  </li>
+    </ul>
+
+    <h4><b>Related Offensive Tools, Techniques, Technology, and Data:</b></h4>
+    <ul>
+        <li><b>Tools: </b>Phishing kits, malware creation frameworks, penetration testing tools (e.g., Metasploit for exploit development). </li>
+        <li><b>Techniques:</b>Social engineering, exploiting unpatched vulnerabilities, data exfiltration methods, credential harvesting, and lateral movement. </li>
+        <li><b>Technology: </b>Encrypted C2 channels, VPNs for anonymity, and the dark web for selling or distributing the leaked data. </li>
+        <li><b>Data: </b>Sensitive documents, personal identifiable information (PII) of facility personnel, facility schematics, or other classified data. </li>
+    </ul>
+        
+    <h3><b><u>Defensive Cyber Strategy:</u></b></h3>
+    <p>To protect against similar operations, an Israeli facility would need to develop a cybersecurity strategy that
+         protects its IT network, monitors for threats, and ensures the OT network remains isolated from cyber threats.
+          This strategy would implement the below tools and strategies, as well as other basics such as a zero trust 
+          policy, reduced physical access, and basic antivirus.  </p>
+    
+    <h4><b>Intrusion Detection and Prevention Systems (IDPS):</b></h4>
+    <ul>
+        <li><b>Purpose: </b>To detect and block suspicious activity in real-time.</li>
+        <li><b>Function: </b>By segregating IT and OT environments, attackers would find it much harder to move laterally and affect critical systems even if the IT network is compromised. </li>
+    </ul>
+
+    <h4><b>Endpoint Detection and Response (EDR):</b></h4>
+    <ul>
+        <li><b>Purpose: </b>To monitor endpoints (workstations, servers) for malicious behavior. </li>
+        <li><b>Function: </b>EDR continuously scans for indicators of compromise (IoCs), including malware, abnormal process behavior, and privilege escalation attempts.  </li>
+    </ul>
+
+    <h4><b>Related Defensive Tools, Techniques, Technology, and Data: </b></h4>
+    <ul>
+        <li><b>Tools: </b>Firewalls, VPNs, multi-factor authentication (MFA), Security Information and Event Management (SIEM) systems. </li>
+        <li><b>Techniques: </b>Segmentation of IT/OT networks, anomaly detection, patch management, penetration testing. </li>
+        <li><b>Technology: </b>Use of AI/ML for threat detection, encryption protocols to protect data, forensic tools to analyze breaches.  </li>
+        <li><b>Data: </b>Logs from firewalls, IDPS systems, and SIEM platforms that provide real-time information on potential threats and past attack indicators. </li>
+    </ul>
+
+</body>
