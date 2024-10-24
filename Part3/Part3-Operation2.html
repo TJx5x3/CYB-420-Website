@@ -6,6 +6,144 @@
 <link rel="stylesheet" href="styles.css">
 
 <body>
+    <h1 style="text-align: center;"><b>Operation 2:</b></h1>
+    <h1>Israeli Water Infrastructure Attack</h1>
+
+    <h3><b>Description:</b></h3>
+
+    <ul>
+        <li>Occurred in April of 2020.</li>
+        <li>Linked to Iranian group: CyberAv3ngers </li>
+        <li>In two rural districts, Iranian hackers attacked computers that control water flow and wastewater treatments.</li>
+        <li>Attack attempted to poison the water by increasing chlorine levels in water going to residential areas.</li>
+        <li>Also sought to trigger fail-safe which would shut down pumps to leave thousands without water during heatwave.</li>
+        <li>Pumps went into continuous operation, wiped out information, irregularities due to unplanned changes in data.</li>
+        <li>Ultimately no damage was done (minor issues in local water systems).</li>
+        <li>Israel retaliated by launching a cyberattack on an Iranian port, attempting to harm the economy.</li>
+        <li>Was first modern attack on civilian infrastructure from Iran to Israel.</li>
+    </ul>
+
+    <h3><b><u>Offensive Cyber Strategy:</u></b></h3>
+    <ul>
+        <li> 
+            <b>Logical:</b>
+            <ul>
+                <li>
+                    <b>Exploited Passwords:</b>
+                    <ul>
+                        <li>Many facilities use default passwords so it was easy for hackers to gain access.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Exploited known vulnerabilities:</b>
+                    <ul>
+                        <li>Hackers are able to manipulate systems remotely by gaining access through devices with unpatched vulnerabilities.</li>
+                        <li>Scanned for devices to find these vulnerabilities.</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+        <li>
+            <b>Physical:</b>
+            <ul>
+                <li>Manipulated programmable logic controllers to increase chlorine levels and prevent water from being distributed.</li>
+                <li>Program logic controllers are physical devices in the facility that are essential to automate processes in water treatment and distribution systems.</li>
+                <li>Able to physically attack remotely.</li>
+            </ul>
+        </li>
+
+        <li><b>Summary of related tools:</b>
+        <ul>
+            <li>Spear-phishing:
+                <ul>
+                    <li>Attempt to trick specific individuals into providing sensitive information or downloading malware typically through emails that appear legitimate </li>
+                </ul>
+            </li>
+            <li>Lateral Movement:
+                <ul>
+                    <li>Strategy used by hackers to navigate from one compromised system to gain access to another, more valuable target.</li>
+                </ul>
+            </li>
+            <li>Exploiting zero-day vulnerabilities:
+                <ul>
+                    <li>Exploiting vulnerabilities that the developer is unaware of to gain access to a system before a patch is released </li>
+                </ul>
+            </li>
+            <li>Use of encrypted communication channels to obfuscate command-and-control operations:
+                <ul>
+                    <li>Conceal communication between malware on a compromised system and the attacker’s command server </li>
+                </ul>
+            </li>
+        </ul>
+        </li>
+    </ul>
+
+    <h3><b><u>Defensive Cyber Strategy:</u></b></h3>
+    <ul>
+        <li>
+            <b>Logical:</b>
+            <ul>
+                <li>Intrusion Detection and Prevention Systems:
+
+                    <ul>
+                        <li>Monitor network traffic in real-time to detect suspicious behavior or any unauthorized access attempts.</li>
+                        <li>This should be implemented as a high priority for any systems directly controlling critical infrastructure.</li>
+                        <li>Patterns of malware can be detected and blocked before they reach operational systems.</li>
+                    </ul>
+                </li>
+                <li>Multi-Factor Authentication:
+                    <ul>
+                        <li>Secure access to critical infrastructure control systems and administrative tools to ensure that access cannot be easily gained.</li>
+                        <li>Additional verification, such as a onetime passcode or biometrics, is required to gain access instead of using just a username and password.</li>
+                        <li>Credentials can still be stolen, but it is harder to gain access due to the second method of authorization required.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><b>Physical:</b>
+            <ul>
+                <li>Air-gapped systems:
+                    <ul>
+                        <li>Critical infrastructure control systems isolate from the internet and other networks to prevent remote access.</li>
+                        <li>Iran was able to gain control through remote access – this could prevent similar future attacks.</li>
+                        <li>A physical attack (such as a USB drop) would be the only way to attack this type of system.</li>
+                        <li>Protects against malware, ransomware, zero-day exploits, advanced persistent threats.</li>
+                        <li>Access controls and authentication must be strict and data is transferred manually.</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><b>Summary of Related Tools:</b>
+            <ul>
+                <li>Firewalls
+
+                    <ul>
+                        <li>Barrier between trusted internal networks and untrusted external networks </li>
+                        <li>Blocks unauthorized access while allowing legitimate traffics.</li>
+                    </ul>
+                </li>
+                <li>Segmentation of network zones
+                    <ul>
+                        <li>Divides network into smaller, isolated zones to limit breach impacts </li>
+                        <li>If one segment gets compromised, hackers can’t easily move laterally to another.</li>
+                    </ul>
+                </li>
+                <li>PLC-specific security appliances:</li>
+                    <ul>
+                        <li>Added security features tailored specifically for the programmable logic controllers that are used by the Israeli facilities. </li>
+                    </ul>
+                <li>Continuous monitoring and logging of network traffic, user access logs, and system performance data.
+                </li>
+                <ul>
+                    <li>Automated monitoring tools can be used to watch for suspicious behavior to allow quick response to threats </li>
+                </ul>
+            </ul>
+
+        </li>
+
+    </ul>
 
 </body>
 
