@@ -1,208 +1,420 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
+  <link rel="stylesheet" href="../styles.css" />
 
-<body>
+  <body>
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
-        <a href="../home.html" class="w3-bar-item w3-button">
-          <img src="../images/Guardians_of_the_Islamic_Revolution.png" alt="Logo" style="height: 30px; width: auto; vertical-align: middle;">
-        </a>
-        <a href="../home.html" class="w3-button w3-bar-item">Home</a>
-        <div class="dropdown">
-          <button class="w3-button w3-bar-item">Part 1</button>
-          <div class="dropdown-content">
-              <a href="../mission.html">Mission Statement</a>
-              <a href="../ops_hierarchy.html">Operatives Hierarchy</a>
-              <a href="../operatives.html">Operatives</a>
-              <a href="../mois.html">MOIS</a>
-          </div>
+      <a href="../home.html" class="w3-bar-item w3-button">
+        <img
+          src="../images/Guardians_of_the_Islamic_Revolution.png"
+          alt="Logo"
+          style="height: 30px; width: auto; vertical-align: middle"
+        />
+      </a>
+      <a href="../home.html" class="w3-button w3-bar-item">Home</a>
+      <div class="dropdown">
+        <button class="w3-button w3-bar-item">Part 1</button>
+        <div class="dropdown-content">
+          <a href="../mission.html">Mission Statement</a>
+          <a href="../ops_hierarchy.html">Operatives Hierarchy</a>
+          <a href="../operatives.html">Operatives</a>
+          <a href="../mois.html">MOIS</a>
         </div>
-        <div class="dropdown">
-          <button class="w3-button w3-bar-item">Part 2</button>
-          <div class="dropdown-content">
-              <a href="../irandoctrine.html">Iran Cyberwarfare Doctrine</a>
-              <a href="../nato.html">NATO-EU Doctrine</a>
-              <a href="../us.html">US Doctrine</a>
-              <a href="../pers_hierarchy.html">Personnel Cyber Hierarchy</a>
-          </div>
+      </div>
+      <div class="dropdown">
+        <button class="w3-button w3-bar-item">Part 2</button>
+        <div class="dropdown-content">
+          <a href="../irandoctrine.html">Iran Cyberwarfare Doctrine</a>
+          <a href="../nato.html">NATO-EU Doctrine</a>
+          <a href="../us.html">US Doctrine</a>
+          <a href="../pers_hierarchy.html">Personnel Cyber Hierarchy</a>
         </div>
-        <div class="dropdown">
-          <button class="w3-button w3-bar-item">Part 3</button>
-          <div class="dropdown-content">
-            <a href="Part3-Operation1.html">Operation 1</a>
-            <a href="Part3-Operation2.html">Operation 2</a>
-            <a href="Part3-Operation3.html">Operation 3</a>
-            <a href="Part3-Operation4.html">Operation 4</a>
-          </div>
+      </div>
+      <div class="dropdown">
+        <button class="w3-button w3-bar-item">Part 3</button>
+        <div class="dropdown-content">
+          <a href="Part3-Operation1.html">Operation 1</a>
+          <a href="Part3-Operation2.html">Operation 2</a>
+          <a href="Part3-Operation3.html">Operation 3</a>
+          <a href="Part3-Operation4.html">Operation 4</a>
         </div>
-      
-        <a href="../resources.html" class="w3-button w3-bar-item">Resources</a>
-      </nav>
-    
+      </div>
 
+      <a href="../resources.html" class="w3-button w3-bar-item">Resources</a>
+    </nav>
 
     <!-- Main content -->
-    <h1 style="text-align: center;"><b>Operation 4 && Operation 4.5:</b></h1>
-    <h1>ESET Research: Iran-OilRig group (Helix Kitten) deployed new malware to its Israeli victims, collecting credentials </h1>
+    <h1 style="text-align: center"><b>Operation 4 && Operation 4.5:</b></h1>
+    <h1>
+      ESET Research: Iran-OilRig group (Helix Kitten) deployed new malware to
+      its Israeli victims, collecting credentials
+    </h1>
 
-    <br/>
-    
-    <p><b>Actor(s):  </b>Oilrig (COBALT GYPSY, IRN2, APT34, Helix Kitten, Evasive Serpens, Hazel Sandstorm, EUROPIUM)</p>
-    <p><b>What did they do? </b>Held two campaigns with a undiscovered backdoors.</p>
-    <p><b>Who did the attack: </b>Various Israeli healthcare sectors, a manufacturing company, and a local governmental organization.</p>
+    <br />
+
+    <p>
+      <b>Actor(s): </b>Oilrig (COBALT GYPSY, IRN2, APT34, Helix Kitten, Evasive
+      Serpens, Hazel Sandstorm, EUROPIUM)
+    </p>
+    <p>
+      <b>What did they do? </b>Held two campaigns with a undiscovered backdoors.
+    </p>
+    <p>
+      <b>Who did the attack: </b>Various Israeli healthcare sectors, a
+      manufacturing company, and a local governmental organization.
+    </p>
     <p><b>Type of Attack: </b>Cyberespionage and credential theft.</p>
     <p><b>1st Campain Caught - September 2023: </b>Credential Theft</p>
-    <p><b>2nd campaign Caught - December 2023: </b>Actions on systems (downloaders) </p>
+    <p>
+      <b>2nd campaign Caught - December 2023: </b>Actions on systems
+      (downloaders)
+    </p>
 
-    <h3><b><u>Description:</u></b></h3>
-    <p>Oilrig began the campaign (Solar) by hacking into a legitimate webserver to use it as a C2 (c&c) server to run undiscovered 
-        backdoors after being compromised typically through email phishing. The c2 server allows Iranian hackers to access the 
-        systems without looking like suspicious network activity.  Doing this allowed them to also install a multitude of different 
-        post-compromise tools that allow for extraction of data. During the first campaign Oilrig mostly focused on stealing data 
-        from Windows Credential Manager and from major browsers, credentials, cookies and browsing history.  </p>
+    <h3>
+      <b><u>Description:</u></b>
+    </h3>
+    <p>
+      Oilrig began the campaign (Solar) by hacking into a legitimate webserver
+      to use it as a C2 (c&c) server to run undiscovered backdoors after being
+      compromised typically through email phishing. The c2 server allows Iranian
+      hackers to access the systems without looking like suspicious network
+      activity. Doing this allowed them to also install a multitude of different
+      post-compromise tools that allow for extraction of data. During the first
+      campaign Oilrig mostly focused on stealing data from Windows Credential
+      Manager and from major browsers, credentials, cookies and browsing
+      history.
+    </p>
 
-    <p>After Compromise they began a second operation closely related to Solar where they used four lightweight but highly adaptable 
-        downloaders; SampleCheck5000, ODAgent, OILcheck, and OILBooster. Although relation of the two compromises hasn't directly 
-        been linked, we can assume that the same actors attacked both as all data breaches during the second operation were all 
-        previously compromised by Oilrig. Like they did previously during the Solar campain, they used malicious emails, but this 
-        time using legitimate cloud storage and cloud-based email services most of which come from Microsoft. Notable compromises 
-        included; Microsoft Graph OneDrive, Outlook APIs’, and Microsoft Office Exchange Web Services. </p>
+    <p>
+      After Compromise they began a second operation closely related to Solar
+      where they used four lightweight but highly adaptable downloaders;
+      SampleCheck5000, ODAgent, OILcheck, and OILBooster. Although relation of
+      the two compromises hasn't directly been linked, we can assume that the
+      same actors attacked both as all data breaches during the second operation
+      were all previously compromised by Oilrig. Like they did previously during
+      the Solar campain, they used malicious emails, but this time using
+      legitimate cloud storage and cloud-based email services most of which come
+      from Microsoft. Notable compromises included; Microsoft Graph OneDrive,
+      Outlook APIs’, and Microsoft Office Exchange Web Services.
+    </p>
 
-    <h3><b><u>Tools Used durring this Campaign</u></b></h3>
+    <h3>
+      <b><u>Tools Used:</u></b>
+    </h3>
     <ul>
-        <li>
-            <b>ODagent: </b>
-            (similar to OilRig’s Marlin backdoor) Uses the Microsoft OneDrive API for C&C communications. However, ODagent was 
-            specifically made to specialize in downloading and executing various payloads. 
-
-        </li>
-        <li>
-            <b>OILboost: </b>
-            like ODAgent, it uses Microsoft one drive, but the difference is in they use the API to access OneDrive accounts 
-            instead of a compromised Outlook account.
-        </li>
-        <li>
-            <b>Samplecheck5000 (SC5k): </b>
-            Is used to download and execute OilRig tools using the Office Exchange Web Services instead of OneDrive. However, 
-            it was updated to now obsfiscate analysis and add new new exfiltration functionality. This downloader (Last seen 
-            2023) has been updated to v3. 
-        </li>
-        <li>
-            <b>OILcheck:</b> 
-            Based on SC5k v3. Uses the same methods to extract commands hidden in messeges, but the difference being 
-            is uses Microsoft graph for communication instead of Microsoft exchange mail 
-        </li>
+      <li>
+        <b>ODagent: </b>
+        (similar to OilRig’s Marlin backdoor) Uses the Microsoft OneDrive API
+        for C&C communications. However, ODagent was specifically made to
+        specialize in downloading and executing various payloads.
+      </li>
+      <li>
+        <b>OILboost: </b>
+        like ODAgent, it uses Microsoft one drive, but the difference is in they
+        use the API to access OneDrive accounts instead of a compromised Outlook
+        account.
+      </li>
+      <li>
+        <b>Samplecheck5000 (SC5k): </b>
+        Is used to download and execute OilRig tools using the Office Exchange
+        Web Services instead of OneDrive. However, it was updated to now
+        obsfiscate analysis and add new new exfiltration functionality. This
+        downloader (Last seen 2023) has been updated to v3.
+      </li>
+      <li>
+        <b>OILcheck:</b>
+        Based on SC5k v3. Uses the same methods to extract commands hidden in
+        messeges, but the difference being is uses Microsoft graph for
+        communication instead of Microsoft exchange mail
+      </li>
     </ul>
 
-    <h3><b><u>Offensive Cyber Strategy:</u></b></h3>
+    <h3>
+      <b><u>Offensive Cyber Strategy:</u></b>
+    </h3>
     <ul>
-    <h5><b>Custom Phishing Campaign Engine with Dynamic Payload Generation:</b></h5>
-    <ul>
+      <h5>
+        <b>Custom Phishing Campaign Engine with Dynamic Payload Generation:</b>
+      </h5>
+      <ul>
         <li>
-            <b>Tool: </b>
-            Gophish or Cobalt Strike 
+          <b>Tool: </b>
+          Gophish or Cobalt Strike
         </li>
         <li>
-            <b>Purpose:</b>
-            Automate the crafting and distribution of phishing emails with embedded malicious payloads that can adapt 
-            based on the target’s system. Cobalt Strike, in particular, is popular among adversaries for its 
-            flexibility in creating payloads and managing phishing campaigns. 
+          <b>Purpose:</b>
+          Automate the crafting and distribution of phishing emails with
+          embedded malicious payloads that can adapt based on the target’s
+          system. Cobalt Strike, in particular, is popular among adversaries for
+          its flexibility in creating payloads and managing phishing campaigns.
         </li>
+      </ul>
+
+      <h5>
+        <b>Stealth C2 Infrastructure with Domain Fronting Capabilities:</b>
+      </h5>
+      <ul>
+        <li>
+          <b>Tool: </b>
+          Merlin C2 Platform or Covenant C2 Framework
+        </li>
+        <li>
+          <b>Purpose:</b>
+          Set up a command-and-control (C2) server using domain fronting to
+          blend malicious traffic with legitimate communications. These C2 tools
+          can disguise traffic through trusted domains, making it difficult for
+          defenders to distinguish between normal and malicious activities.
+        </li>
+      </ul>
+
+      <h5>
+        <b>Modular Data Exfiltration Malware with Adaptive Capabilities:</b>
+      </h5>
+      <ul>
+        <li>
+          <b>Tool: </b>
+          Gophish or Cobalt Strike
+        </li>
+        <li>
+          <b>Purpose:</b>
+          Use modular malware to deploy adaptive backdoors that can extract
+          credentials, cookies, and browsing history based on conditions.
+          Empire’s PowerShell scripts can stay dormant and trigger based on
+          specific network conditions.
+        </li>
+      </ul>
+
+      <h5><b>Cyber Operation Legality:</b></h5>
+
+      <p><b>International Law Considerations</b></p>
+      <ul>
+        <li>
+          <b>Sovereignty:</b> The operation likely violates the sovereignty of
+          Israel and that of potentially other countries. Unauthorized access to
+          computer systems in foreign territories is generally considered a
+          breach of sovereignty under international law.
+        </li>
+        <li>
+          <b>Non-intervention:</b> The campaign could be seen as an unlawful
+          intervention in the internal affairs of the targeted states,
+          particularly given its focus on critical sectors like healthcare and
+          government.
+        </li>
+      </ul>
+
+      <p><b>Use of Force and Armed Attack</b></p>
+      <ul>
+        <li>
+          <b>Threshold:</b> While primarily focused on espionage, the
+          operation's potential to disrupt critical infrastructure could
+          potentially cross the threshold of "use of force" under international
+          law.
+        </li>
+      </ul>
+
+      <p><b>State Responsibility</b></p>
+      <ul>
+        <li>
+          <b>Attribution:</b> Iran could be held responsible under international
+          law if the operation is conclusively attributed to state actors or
+          proxies acting under its direction or control.
+        </li>
+      </ul>
+
+      <p><b>Cybercrime Laws</b></p>
+      <ul>
+        <li>
+          <b>Domestic and International Statutes:</b> The activities described
+          likely violate numerous domestic and international cybercrime laws.
+        </li>
+      </ul>
+
+      <p><b>Human Rights Law</b></p>
+      <ul>
+        <li>
+          <b>Privacy Rights:</b> The extensive data collection and surveillance
+          aspects of the operation may infringe on individual privacy rights
+          protected under international human rights law.
+        </li>
+      </ul>
+
+      <p><b>Espionage Considerations</b></p>
+      <ul>
+        <li>
+          <b>State Practice:</b> While espionage itself is not explicitly
+          prohibited under international law, the methods used (hacking, data
+          theft) violate domestic laws of the target states.
+        </li>
+      </ul>
+
+      <p><b>Countermeasures and Self-Defense</b></p>
+      <ul>
+        <li>
+          <b>Proportionate Response:</b> The targeted states may consider
+          proportionate countermeasures or, if the effects are severe enough,
+          potentially invoke the right to self-defense.
+        </li>
+      </ul>
+
+      <p><b>Sector-Specific Regulations</b></p>
+      <ul>
+        <li>
+          <b>Healthcare and Critical Infrastructure:</b> Targeting healthcare
+          and other critical sectors may violate specific international
+          agreements protecting these areas from cyber attacks.
+        </li>
+      </ul>
+
+      <h5><b>Summary:</b></h5>
+
+      <ul>
+        <li>
+          The offensive strategy leverages tools like Cobalt Strike, which is
+          used to craft sophisticated phishing campaigns and deploy stealthy
+          malware. The Merlin C2 Platform or Covenant C2 enables the attackers
+          to establish hidden communication channels using domain fronting
+          techniques. Meanwhile, modular tools from Metasploit and Empire
+          facilitate data exfiltration by adapting to different defensive
+          measures.
+        </li>
+      </ul>
     </ul>
 
-    <h5><b>Stealth C2 Infrastructure with Domain Fronting Capabilities:</b></h5>
+    <h3>
+      <b><u>Defensive Cyber Strategy:</u></b>
+    </h3>
     <ul>
+      <h5><b>Zero Trust Architecture:</b></h5>
+      <ul>
         <li>
-            <b>Tools: </b>
-            Merlin C2 Platform or Covenant C2 Framework 
+          <b>Tool: </b>
+          Microsoft Azure Active Directory Conditional Access or Okta Identity
+          Cloud
         </li>
         <li>
-            <b>Purpose:</b>
-            Set up a command-and-control (C2) server using domain fronting 
-            to blend malicious traffic with legitimate communications. 
-            These C2 tools can disguise traffic through trusted domains, 
-            making it difficult for defenders to distinguish between normal 
-            and malicious activities. 
+          <b>Purpose: </b>
+          Deploy AI-powered solutions like Darktrace to continuously monitor
+          network traffic and detect deviations from normal behavior. These
+          tools use machine learning models to flag unusual activities, such as
+          unauthorized data transfers or connections to unfamiliar domains.
         </li>
-    </ul>
+      </ul>
 
-    <h5><b>Modular Data Exfiltration Malware with Adaptive Capabilities:</b></h5>
-    <ul>
+      <h5><b>Honeypots and Honeytokens :</b></h5>
+      <ul>
         <li>
-            <b>Tool: </b>
-            Gophish or Cobalt Strike 
+          <b>Tool: </b>
+          CanaryTokens or Acalvio ShadowPlex
         </li>
         <li>
-            <b>Purpose:</b>
-            Use modular malware to deploy adaptive backdoors that can extract 
-            credentials, cookies, and browsing history based on conditions. 
-            Empire’s PowerShell scripts can stay dormant and trigger based on 
-            specific network conditions. 
+          <b>Purpose: </b>
+          Use deception-based tools like CanaryTokens to set traps that alert
+          administrators if accessed. Acalvio’s ShadowPlex can deploy decoy
+          servers, credentials, and applications to detect attackers early and
+          collect intelligence on their tactics.
         </li>
+      </ul>
+
+      <h5><b>Cyber Operation Legality:</b></h5>
+
+      <p><b>International Law Considerations</b></p>
+      <ul>
+        <li>
+          <b>Sovereignty and Non-Intervention:</b> Israel's defensive measures
+          must respect the sovereignty of other nations and adhere to the
+          principle of non-intervention.
+        </li>
+        <li>
+          <b>Due Diligence:</b> Under international law, Israel has a duty to
+          ensure its territory is not used for cyber operations that harm other
+          states. This includes implementing robust cybersecurity measures to
+          prevent its systems from being exploited for attacks against other
+          countries.
+        </li>
+      </ul>
+
+      <p><b>Domestic Legal Frameworks</b></p>
+      <ul>
+        <li>
+          <b>Data Protection and Privacy Laws:</b> The deployment of tools such
+          as network traffic analysis and anomaly detection must comply with
+          Israeli data protection laws.
+        </li>
+        <li>
+          <b>Cybersecurity Regulations:</b> Israel's national cybersecurity
+          framework mandates specific protective measures for critical
+          infrastructure.
+        </li>
+      </ul>
+
+      <p><b>Human Rights Considerations</b></p>
+      <ul>
+        <li>
+          <b>Privacy Rights:</b> Defensive measures involving monitoring and
+          data collection must balance security needs with individual privacy
+          rights, ensuring compliance with both domestic and international human
+          rights standards.
+        </li>
+      </ul>
+
+      <p><b>International Cooperation</b></p>
+      <ul>
+        <li>
+          <b>Information Sharing:</b> Effective defense against cyber threats
+          often requires international cooperation. Israel's strategy may
+          involve sharing threat intelligence with allies, which must be
+          conducted in accordance with international agreements and protocols.
+        </li>
+      </ul>
+
+      <p><b>Proportionality and Necessity</b></p>
+      <ul>
+        <li>
+          <b>Defensive Measures:</b> Any defensive actions taken must be
+          proportionate to the threat posed and necessary to protect national
+          security interests.
+        </li>
+      </ul>
+
+      <p><b>Cyber Norms and Best Practices</b></p>
+      <ul>
+        <li>
+          <b>Responsible State Behavior:</b> Israel's defensive strategy should
+          align with emerging norms of responsible state behavior in cyberspace,
+          including transparency, accountability, and respect for international
+          law.
+        </li>
+      </ul>
+
+      <h5><b>Summary:</b></h5>
+
+      <ul>
+        <li>
+          The defensive approach uses tools like Azure Active Directory
+          Conditional Access to enforce Zero Trust principles, ensuring that
+          every access request is continuously verified. Darktrace or Vectra AI
+          monitors network activity in real time, identifying anomalies that may
+          indicate an ongoing attack. Finally, CanaryTokens or ShadowPlex deploy
+          deceptive elements, providing an early warning system while gathering
+          intelligence on attackers.
+        </li>
+      </ul>
+
+      <img
+        src="../images/Op4-Diagram1.png"
+        alt="Diagram 1"
+        style="width: 50%; height: 50%"
+      />
+      <br />
+      <img
+        src="../images/Op4-Diagram2.png"
+        alt="Diagram 2"
+        style="width: 50%; height: 50%"
+      />
     </ul>
-
-    <h5><b>Cyber Operation Legality:</b></h5>
-    <p>The offensive strategy leverages tools like Cobalt Strike, which is used 
-        to craft sophisticated phishing campaigns and deploy stealthy malware. 
-        The Merlin C2 Platform or Covenant C2 enables the attackers to establish 
-        hidden communication channels using domain fronting techniques. 
-        Meanwhile, modular tools from Metasploit and Empire facilitate data 
-        exfiltration by adapting to different defensive measures </p>
-
-    </ul>
-
-    <h3><b><u>Defensive Cyber Strategy:</u></b></h3>
-    <ul>
-        <h5><b>Zero Trust Architecture:</b></h5>
-        <ul>
-            <li>
-                <b>Tool: </b>
-                Microsoft Azure Active Directory Conditional Access or Okta 
-                Identity Cloud 
-            </li>
-            <li>
-                <b>Purpose: </b>
-                Deploy AI-powered solutions like Darktrace to continuously 
-                monitor network traffic and detect deviations from normal 
-                behavior. These tools use machine learning models to flag 
-                unusual activities, such as unauthorized data transfers or 
-                connections to unfamiliar domains. 
-            </li>
-        </ul>
-
-        <h5><b>Honeypots and Honeytokens :</b></h5>
-        <ul>
-            <li>
-                <b>Tool: </b>
-                CanaryTokens or Acalvio ShadowPlex 
-            </li>
-            <li>
-                <b>Purpose: </b>
-                Use deception-based tools like CanaryTokens to set traps 
-                that alert administrators if accessed. Acalvio’s ShadowPlex 
-                can deploy decoy servers, credentials, and applications to 
-                detect attackers early and collect intelligence on their tactics. 
-            </li>
-        </ul>
-
-        <h5><b>Cyber Operation Legality:</b></h5>
-    <p>The defensive approach uses tools like Azure Active Directory Conditional 
-        Access to enforce Zero Trust principles, ensuring that every access request 
-        is continuously verified. Darktrace or Vectra AI monitors network activity 
-        in real time, identifying anomalies that may indicate an ongoing attack. 
-        Finally, CanaryTokens or ShadowPlex deploy deceptive elements, providing an 
-        early warning system while gathering intelligence on attackers.  </p>
-
-        <img src="../images/Op4-Diagram1.png" alt="Diagram 1" style="width: 50%; height: 50%;">
-        <br/>
-        <img src="../images/Op4-Diagram2.png" alt="Diagram 2" style="width: 50%; height: 50%;">
-    </ul>
-
-
-</body>
-
+  </body>
 </html>
