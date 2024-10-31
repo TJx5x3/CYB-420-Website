@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css" />
   <link rel="stylesheet" href="../styles.css" />
 
-  <body>
+  <br>
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
       <a href="../home.html" class="w3-bar-item w3-button">
@@ -57,345 +57,124 @@
     </nav>
 
     <!-- Main content -->
-    <h1 style="text-align: center"><b>Operation 3: </b></h1>
-    <h1>Iranian Attackers Breach US Critical Infrastructure</h1>
+    <h1 style="text-align: center"><b>THREAT GROUP 3</b></h1>
 
-    <h3>
-      <b><u>Description:</u></b>
+    <img src="../images/taologo.png" style="height: 300px; width: auto; vertical-align: middle; margin-left: 40%;">
+
+    <h1 style="text-align: center">
+      NSA's Tailored Access Operations (TAO)
+    </h1>
+    <p style="text-align: center;">
+      <b>Tracked Group Names: </b>Equation Group, EQGRP, "Crown creator of espionage"
+    </p>
+  </br>
+    
+    <h3 style="text-align: center;">
+  <b><u>Leadership:</u></b>
+</h3>
+
+    <div class="container">
+      <div class="left-column">
+        <b style="display: block; text-align: center; margin: 0 auto; width: fit-content;">
+          General Timothy D. Haugh: Commander of US Cyber Command, Director of National Security Agency/Chief of Central Security Service
+        </b>
+        
+        <br>
+        <img src="../images/left_timothy.png" style="height: 500px; width: auto; display: block; margin: 0 auto;">
+
+        <p style="display: block; text-align: center; margin: 20px auto 10px auto; width: fit-content; font-weight: normal;">
+          Born January 11, 1969
+        </p>
+        <p style="display: block; text-align: center; margin: 20px auto 10px auto; width: fit-content; font-weight: normal;">
+          Workplace: National Security Agency headquarters at Fort George G. Meade, Maryland
+        </p>
+      </div>
+      <div class="right-column">
+        <b style="display: block; text-align: center; margin: 100px auto 0 auto; width: fit-content;">
+          Wendy Noble: Deputy Director, Senior Civilian Leader & Chief Operating Officer of National Security Agency
+        </b>
+        <br>
+        <img src="../images/wendynoble.png" style="height: 500px; width: auto; display: block; margin: 0 auto;">
+        <p style="display: block; text-align: center; margin: 20px auto 10px auto; width: fit-content; font-weight: normal;">
+          Likely born early to mid 1960s
+        </p>
+        <p style="display: block; text-align: center; margin: 20px auto 10px auto; width: fit-content; font-weight: normal;">
+          Workplace: National Security Agency headquarters at Fort George G. Meade, Maryland
+        </p>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 100px;">
+      <b><u>Cyber Skills/Specializations:</u></b>
     </h3>
     <ul>
-      <li>
-        Iranian government-sponsored APT actors had been exploiting
-        vulnerabilities in Microsoft Exchange and Fortinet products to gain
-        initial access to systems across multiple U.S. critical infrastructure
-        sectors, including Transportation, Healthcare and U.S. municipal
-        government. The actors could potentially leverage this access for
-        follow-up operations like data exfiltration, ransomware deployment, and
-        extortion. This has occurred from March 2021 until about November 2021.
-      </li>
-      <li>
-        In March of 2021, the FBI and CISA observed Iranian government-sponsored
-        APT actors scanning devices on ports 4443, 8443, and 10443 for Fortinet
-        FortiOS vulnerability CVE-2018-13379.
-      </li>
-      <li>
-        In May 2021, these Iranian government-sponsored APT actors exploited a
-        Fortigate appliance to access a webserver hosting the domain for a U.S.
-        municipal government.
-      </li>
-      <li>
-        This goal of this campaign was to have initial access to potential
-        exploit a system further in the future.
-      </li>
+      <li>Network Infiltration: TAO excels at exploiting routers, switches, and firewalls from multiple vendors to gain access to entire networks rather than individual devices.</li>
+      <li>Zero-Day Exploit Development: The unit maintains a comprehensive list of top-secret zero-day exploits, allowing them to compromise computer networks to gather information, disable systems, or destroy data.​</li>
+      <li>Hardware Interception: TAO has the ability to intercept and modify hardware shipments, inserting surveillance tools before devices reach their intended recipients.​</li>
+      <li>Malware Deployment: The group specializes in creating and deploying sophisticated malware for intelligence gathering and system manipulation.​</li>
+      <li>Quantum Attacks: TAO's QUANTUM program enables man-in-the-middle attacks that can monitor and manipulate encrypted communications.</li>
     </ul>
+
+    <b>Threat to Iran - Advanced capabilities, focus on foreign targets, attribution to successful cyber attacks</b>
 
     <h3>
-      <b><u>Offensive Cyber Strategy:</u></b>
+      <b><u>Notable Attack:</u></b>
     </h3>
-    <ol>
-      <li><b>Vulnerability Exploits:</b></li>
-      <ol type="a">
-        <li>CVEs used:</li>
-        <ol type="i">
-          <li>CVE-2021-34473 (Microsoft Exchange)</li>
-          <li>CVE-2018-13379, CVE-2020-12812, and CVE-2019-5591(Fortninet).</li>
-        </ol>
-      </ol>
-      <li><b>Mimikatz:</b></li>
-      <ol type="a">
-        <li>Used for credential theft.:</li>
-      </ol>
-
-      <li><b>WinPEAS:</b></li>
-      <ol type="a">
-        <li>Used for privilege escalation.</li>
-      </ol>
-
-      <li><b>SharpWMI (Windows Management Instrumentation):</b></li>
-      <ol type="a">
-        <li>Used for lateral movement and remote execution.</li>
-      </ol>
-
-      <li><b>WinRAR:</b></li>
-      <ol type="a">
-        <li>Used to archive collected data.</li>
-      </ol>
-
-      <li><b>FileZilla:</b></li>
-      <ol type="a">
-        <li>Used to transfer files.</li>
-        <li>Potentially used FTP over 443.</li>
-      </ol>
-
-      <li><b>Persistence Techniques:</b></li>
-      <ol type="a">
+      <h4>
+        <b><i>The Duqu Attack</i></b>
+      </h4>
+      <ul>
         <li>
-          Established new user accounts. Some of these were made to look like
-          other user accounts.
+          <b>Description: </b> A sophisticated malware that is closely related to the Stuxnet worm was discovered in 2011 to have targeted Iran's nuclear facilities.
         </li>
-      </ol>
-
-      <li><b>Ransomeware:</b></li>
-      <ol type="a">
         <li>
-          BitLocker was forced to activate on host networks, along with a
-          threatening text file or email to the user.
+          <b>Attack Characteristics: </b>
+          <ul>
+            <li>Duqu exploited zero-day vulnerabilities in Microsoft Windows systems.</li>
+            <li>It used stolen digital certificates to appear legitimate.</li>
+            <li>The malware had a modular structure, allowing for flexible deployment of different payloads.</li>
+            <li>Duqu utilized sophisticated persistence mechanisms and command-and-control infrastructure.</li>
+          </ul>
         </li>
-        <ol type="i">
-          <li>The following emails were left for contact information:</li>
-          <ol>
-            <li>sar_addr@protonmail[.]com</li>
-            <li>WeAreHere@secmail[.]pro</li>
-            <li>nosterrmann@mail[.]com</li>
-            <li>nosterrmann@protonmail[.]com</li>
-          </ol>
-        </ol>
-      </ol>
-      <br />
-    </ol>
-
-    <!-- Possibly remove -->
-    <h4><b>Legal Issues:</b></h4>
-
-    <p><b>International Law Considerations:</b></p>
-    <ul>
-      <li>
-        <b>Use of Force:</b>
-        The attacks on water facilities and other critical infrastructure could
-        potentially be considered a use of force under international law. This
-        raises questions about the legality of such actions under the UN
-        Charter.
-      </li>
-
-      <li>
-        <b>State Responsibility:</b>
-        If conclusively attributed to Iran, these attacks could be considered
-        violations of international law norms prohibiting intervention in the
-        internal affairs of other states and the obligation to respect the
-        sovereignty of other nations.
-      </li>
-    </ul>
-
-    <p><b>Laws of Armed Conflict</b></p>
-    <ul>
-      <li>
-        <b>Distinction:</b>
-        Targeting civilian infrastructure like water facilities and hospitals
-        raises concerns about compliance with the principle of distinction
-        between military and civilian targets.
-      </li>
-
-      <li>
-        <b>Proportionality:</b>
-        The potential impacts on civilian populations from disrupting critical
-        infrastructure could be considered disproportionate to any military
-        objective.
-      </li>
-    </ul>
-
-    <p><b>Cybercrime Laws:</b></p>
-    <ul>
-      <li>
-        <b>Domestic and International Cybercrime Statures:</b>
-        The unauthorized access of computer systems, data theft, and deployment
-        of ransomware likely violate numerous domestic and international
-        cybercrime laws.
-      </li>
-    </ul>
-
-    <p><b>Human Rights Law:</b></p>
-    <ul>
-      <li>
-        <b>Right to Water and Health:</b>
-        Attacks on water systems and healthcare facilities could be seen as
-        violations of fundamental human rights to water, sanitation, and health.
-      </li>
-    </ul>
-
-    <p><b>State Practice and Cyber Norms:</b></p>
-    <ul>
-      <li>
-        <b>Responsible State Behavior:</b>
-        These operations contravene emerging norms of responsible state behavior
-        in cyberspace, particularly those prohibiting attacks on critical
-        infrastructure during peacetime.
-      </li>
-    </ul>
-
-    <p><b>Countermeasures and Self-Defense:</b></p>
-    <ul>
-      <li>
-        <b>Proportionate Response:</b>
-        The attacks could potentially justify proportionate countermeasures.
-      </li>
-    </ul>
-
-    <p><b>Espionage Considerations:</b></p>
-    <ul>
-      <li>
-        <b>State Practice:</b>
-        While espionage itself is not generally prohibited under international
-        law, the methods used (hacking, data theft) likely violate domestic laws
-        of the target state.
-      </li>
-    </ul>
-
-    <h4><b>Related Tools, Techniques, Technology, and Data:</b></h4>
-    <ol>
-      <li>Task Scheduler modifications for persistence</li>
-      <li>Creation of new user accounts for maintaining access.</li>
-      <li>Use of legitimate tools for data collection and exfiltration</li>
-      <li>FTP transfers over port 443 for data exfiltration.</li>
-      <li>Exploiting Fortninet Devices</li>
-    </ol>
-
+        <li>
+          <b>Threat Actors' Motivations: </b>
+          <ul>
+            <li>Intelligence Gathering: Duqu was designed as an information-stealing malware, aimed at gathering intelligence on Iran's nuclear program.</li>
+            <li>Espionage: The malware allowed the attackers to spy on and monitor Iranian nuclear facilities and related organizations.</li>
+            <li>Preparation for Future Attacks: By collecting sensitive information, Duqu laid the groundwork for potential future cyber or physical attacks on Iran's nuclear infrastructure.</li>
+          </ul>
+        </li>
+      </ul>
     <h3>
-      <b><u>Defensive Cyber Strategy:</u></b>
+      <b><u>Detect and Track:</u></b>
     </h3>
-    <ol>
-      <li>Detection Systems:</li>
-      <ol type="a">
-        <li>Investigate Microsoft Exchange servers for compromise.</li>
-        <li>
-          Search for potential changes in firewall, RDP, and WinRM settings that
-          may allow attackers back in.
-        </li>
-        <li>Review directories for new user accounts.</li>
-        <li>An IDS or IPS can also be implemented</li>
-      </ol>
-      <li>Patch Management:</li>
-      <ol type="a">
-        <li>install new patches and updates.</li>
-        <li>
-          Specifically patch software affected by the CVE mentioned earlier.
-        </li>
-      </ol>
-
-      <li>Network Segmentation:</li>
-      <ol type="a">
-        <li>Segmentate the network to prevent lateral movement.</li>
-      </ol>
-      <li>Multi-Factor Authentication:</li>
-      <ol type="a">
-        <li>
-          Use MFA to help protect accounts with access to critical systems.
-        </li>
-      </ol>
-      <li>Phishing Awareness:</li>
-      <ol type="a">
-        Use meetings or emails to spread awareness for phishing attempts.
-      </ol>
-    </ol>
-
-    <h4><b>Legal Issues:</b></h4>
-
-    <p><b>Domestic Legal Authority:</b></p>
+    <h4>
+      <b>Detection</b>
+    </h4>
     <ul>
       <li>
-        <b>Cybersecurity and Infrastructure Security Agency (CISA) Act:</b>
-        This law authorizes CISA to coordinate and implement cybersecurity
-        measures to protect federal civilian networks and critical
-        infrastructure.
+        <p>Use an IDS to detect unusual traffic in the network.</p>
+        <ul>
+          <li>TAO often uses encrypted, covert channels for command and control traffic.</li>
+          <li>An IDS can also be programmed to recognize TAO-related malware signatures (e.g., Stuxnet).</li>
+        </ul>
       </li>
+      <li>Monitor for the use of fake IP addresses.</li>
+      <li>Use an endpoint detection and response solution due to TAO’s affinity for zero-day exploits.</li>
     </ul>
-
-    <p><b>Domestic Legal Authority:</b></p>
+    <h4>
+      <b>Track</b>
+    </h4>
     <ul>
+      <li>Use OSINT monitoring to track potential TAO activity in the area.</li>
+      <li>Create honeypots to detect TAO’s specific targeting behaviors.</li>
       <li>
-        <b>Cybersecurity and Infrastructure Security Agency (CISA) Act:</b>
-        This law authorizes CISA to coordinate and implement cybersecurity
-        measures to protect federal civilian networks and critical
-        infrastructure.
-      </li>
-      <li>
-        <b>National Defense Authorization Act:</b>
-        Provides legal basis for the Department of Defense to conduct cyber
-        operations to defend against foreign threats to US interests.
+        <b>Log Analysis:</b>
+        <ul>
+          <li>Analyze the network to track unauthorized access attempts, data transfer spikes, or traffic indicative of C2 communication.</li>
+        </ul>
       </li>
     </ul>
-
-    <p><b>International Law Considerations:</b></p>
-    <ul>
-      <li>
-        <b>Sovereignty:</b>
-        Defensive measures must respect the sovereignty of other nations.
-        Actions that impact systems in other countries could violate this
-        principle.
-      </li>
-      <li>
-        <b>Due Diligence:</b>
-        The US has an obligation under international law to exercise due
-        diligence in preventing its territory from being used for cyber
-        operations that affect the rights of other states.
-      </li>
-    </ul>
-
-    <p><b>State Responsibility:</b></p>
-    <ul>
-      <li>
-        <b>Attribution::</b>
-        The US must have sufficient evidence to attribute the attacks to Iran
-        before taking any countermeasures.
-      </li>
-    </ul>
-
-    <p><b>Use of Force and Self-Defense:</b></p>
-    <ul>
-      <li>
-        <b>Threshold and Armed Attack:</b>
-        Defensive measures must not cross the threshold of "use of force" under
-        international law unless the original attack reaches the level of an
-        "armed attack," justifying self-defense under Article 51 of the UN
-        Charter.
-      </li>
-    </ul>
-
-    <p><b>Human Rights Law:</b></p>
-    <ul>
-      <li>
-        <b>Privacy and Data Protection:</b>
-        Defensive measures involving monitoring and data collection must balance
-        security needs with privacy rights and data protection laws.
-      </li>
-    </ul>
-
-    <p><b>Cybercrime Laws:</b></p>
-    <ul>
-      <li>
-        <b>Budapest Convention:</b>
-        US actions should align with international cybercrime treaties, which
-        provide frameworks for international cooperation in cybercrime
-        investigations.
-      </li>
-    </ul>
-
-    <p><b>Proportionality and Necessity:</b></p>
-    <ul>
-      <li>
-        <b>Countermeasures:</b>
-        Any defensive actions that could be considered countermeasures must be
-        proportional to the injury suffered and necessary to induce compliance
-        with international law.
-      </li>
-    </ul>
-
-    <p><b>Critical Infrastructure Protection</b></p>
-    <ul>
-      <li>
-        <b>Sector-Specific Regulations:</b>
-        Defensive actions in specific sectors must comply with sector-specific
-        regulations and standards.
-      </li>
-    </ul>
-
-    <p><b>Public-Private Partnerships:</b></p>
-    <ul>
-      <li>
-        <b>Information Sharing:</b>
-        Legal frameworks like the Cybersecurity Information Sharing Act govern
-        how the government can share threat intelligence with private sector
-        entities.
-      </li>
-    </ul>
+    
   </body>
 </html>
